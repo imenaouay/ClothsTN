@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILLI & LIT</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="main.css" />
+
+    </head>
+ <body>
+    <div class="container">
+        <section class="wrapper-404">
+            <h1>Let see our collection</h1>
+            <div class="card" id="card-1">
+                <img src="./assets/1.jpg" alt="" srcset="">
+            </div>
+            <div class="card" id="card-2">
+                <img src="./assets/4.jpg" alt="" srcset="">
+            </div>
+            <div class="card" id="card-3">
+                <img src="./assets/6.jpg" alt="" srcset="">
+            </div>
+            <div class="card" id="card-4">
+                <img src="./assets/8.jpg" alt="" srcset="">
+            </div>
+        </section>
+        <section class="outro">
+            <h1>
+                Tunisian traditional clothes with an urban twist . <br/>
+                hery go! It creates joy by fusing modern and traditional elements!
+            </h1>
+        </section>
+    </div>
+
+    <!--all script-->
+   
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+    <script>
+        
+        let isRedirecting = false;
+
+        window.addEventListener('scroll', function() {
+            if (!isRedirecting && (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                isRedirecting = true; // Empêche la redirection multiple
+                setTimeout(function() {
+                    // Redirige vers la deuxième page après 3 secondes
+                    window.location.href = 'store.html';
+                }, 9000); // 9000 millisecondes = 9 secondes
+            }
+        });
+    </script>
+</body>
+</html>

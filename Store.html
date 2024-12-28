@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHILLI&LIT</title>
+    <title>Cloths TN</title>
 
     <!-- Swiper CSS -->
     <link
@@ -33,13 +33,23 @@
   </head>
 
   <body>
+    <!-- Preload-->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- end Preload-->
     <!-- Header -->
+    <div id="main-content" style="display: none"></div>
     <header class="header">
-      <img src="/assets/logo-tranparent.png" alt="CHILLI&LIT Logo" />
+      <img
+        src="https://cdn.pixabay.com/photo/2016/12/17/18/12/logo-1914020_1280.png"
+        alt="CHILLI&LIT Logo"
+        class="button-see"
+      />
       <div class="swiper-pagination"></div>
       <div class="buttons">
         <button class="sec-button">JOIN US</button>
-        <button class="icon-button" >
+        <button class="icon-button">
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -55,15 +65,21 @@
               <div
                 class="box swing d-flex flex-column justify-content-between open-box"
               >
-                <video plays-inline autoplay loop>
-                  <source src="/assets/trailer.mp4" type="video/mp4" />
+                <video controls plays-inline autoplay loop >
+                  <source
+                    src="https://videos.pexels.com/video-files/853800/853800-hd_1920_1080_25fps.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <span class="close">
                   <i class="fa-solid fa-times"></i>
                 </span>
                 <div class="d-flex align-items-center">
                   <span class="tin-img">
-                    <img src="/assets/1.jpg" alt="Fashion Image" />
+                    <img
+                      src="https://soukelkahina.tn/7421-large_default/jebba-jaune-eda.jpg"
+                      alt="Fashion Image"
+                    />
                   </span>
                   <span class="sec-font ms-3"
                     >Times Fashion | Discover our collection with a traditional
@@ -95,7 +111,10 @@
                 <div class="row flex-grow-1">
                   <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="img-container">
-                      <img src="/assets/32.jpg" alt="Store Image" />
+                      <img
+                        src="https://i.pinimg.com/236x/7a/68/f0/7a68f0434b4715bcbcd15096c5fba705.jpg"
+                        alt="Store Image"
+                      />
                     </div>
                   </div>
                   <div
@@ -110,7 +129,7 @@
                       <div class="d-flex align-items-center">
                         <span class="tin-font me-2">
                           123255: street, <br />
-                          block No.32 NY
+                          block No.32 TN
                         </span>
                         <div class="icon icon-button">
                           <i class="fa-solid fa-location-dot"></i>
@@ -154,13 +173,15 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 p-1">
-              <div class="d-flex flex-column justify-content-between flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front d-flex flex-column bg-6-1">
+              <div
+                class="d-flex flex-column justify-content-between flip-cardA"
+              >
+                <div class="flip-card-innerA">
+                  <div class="flip-card-frontA d-flex flex-column bg-6-1">
                     <h1 class="title-4">Women's Long Dress</h1>
                   </div>
                   <div
-                    class="flip-card-back d-flex flex-column justify-content-between"
+                    class="flip-card-backA d-flex flex-column justify-content-between"
                   >
                     <div
                       class="d-flex justify-content-between align-items-center"
@@ -185,13 +206,15 @@
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 p-1">
-              <div class="d-flex flex-column justify-content-between flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front d-flex flex-column bg-6">
+              <div
+                class="d-flex flex-column justify-content-between flip-cardA"
+              >
+                <div class="flip-card-innerA">
+                  <div class="flip-card-frontA d-flex flex-column bg-6">
                     <h1 class="title-4">Jebba Woman</h1>
                   </div>
                   <div
-                    class="flip-card-back d-flex flex-column justify-content-between"
+                    class="flip-card-backA d-flex flex-column justify-content-between"
                   >
                     <div
                       class="d-flex justify-content-between align-items-center"
@@ -215,7 +238,9 @@
           </div>
           <div class="row m-0 container-30">
             <div class="col-lg-8 col-md-6 col-sm-12 p-1">
-              <div class="box-2 d-flex flex-column justify-content-around align-items-start">
+              <div
+                class="box-2 d-flex flex-column justify-content-around align-items-start"
+              >
                 <div class="d-flex justify-content-between w-100">
                   <span class="title-2">Our services</span>
                 </div>
@@ -243,119 +268,145 @@
         </div>
 
         <!-- Gallery -->
-        <div class="swiper-slide">
-          <div class="row m-0 container-50">
-            <div class="col-lg-4 col-md-4 col-sm-16 div-h-100 p-1 flip-card">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/3.jpg" alt="Gallery Image" />
+        <div class="swiper-slide gallery-section">
+          <div class="container-fluid">
+            <!-- First Row -->
+            <div class="row gallery-row">
+              <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <div class="gal-img">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0iAcOlhxJHnUU8FRWcH1M_1JrLKkXDqH7A&s"
+                          alt="Gallery Image"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="product-info">
+                        <span class="price">79,00 TND</span>
+                        <span class="product-name">Jebba Woman</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">79,00 TND</span>
-                  <span class="tin-font m-2">Jebba Woman</span>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <div class="gal-img">
+                        <img
+                          src="https://i.pinimg.com/originals/41/f2/1e/41f21e02035e998d6cf8922e286798e4.jpg"
+                          alt="Gallery Image"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="product-info">
+                        <span class="price">119,00 TND</span>
+                        <span class="product-name"
+                          >Jelbeb Long With Pompom</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12 gallery-item">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <div class="gal-img">
+                        <img
+                          src="https://i.pinimg.com/736x/54/41/1a/54411ac9f8cf799a11e11cfd313ac902.jpg"
+                          alt="Gallery Image"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="flip-card-back">
+                      <div class="product-info">
+                        <span class="price">59,00 TND</span>
+                        <span class="product-name">Jebba Women Mid-length</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-13 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/9.jpg" alt="Gallery Image" />
+
+            <!-- Second Row -->
+            <div class="row gallery-row">
+              <div class="row gallery-row">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="gal-img">
+                          <img
+                            src="https://www.elissar.tn/wp-content/uploads/2023/02/d%C3%A9tails-jebba-4.jpg"
+                            alt="Gallery Image"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="product-info">
+                          <span class="price">79,00 TND</span>
+                          <span class="product-name">Jebba Woman</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">119,00 TND</span>
-                  <span class="tin-font m-2">Jelbeb Long With Pompom</span>
+                <div class="col-lg-6 col-md-6 col-sm-12 gallery-item">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="gal-img">
+                          <img
+                            src="https://i.pinimg.com/736x/dd/ed/67/dded67f3e27333c779fd48063c7ba6f2.jpg"
+                            alt="Gallery Image"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="product-info">
+                          <span class="price">119,00 TND</span>
+                          <span class="product-name"
+                            >Jelbeb Long With Pompom</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-13 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/24.jpg" alt="Gallery Image" />
-                </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">59,00 TND</span>
-                  <span class="tin-font m-2">Jebba Women Mid-length</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row m-0 container-50">
-            <div class="col-lg-2 col-md-2 col-sm-4 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/28.jpg" alt="Gallery Image" />
-                </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">79,00 TND</span>
-                  <span class="tin-font m-2">Jebba Woman</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/29.jpg" alt="Gallery Image" />
-                </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">79,00 TND</span>
-                  <span class="tin-font m-2">Jebba Woman</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-4 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/40.jpg" alt="Gallery Image" />
-                </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">79,00 TND</span>
-                  <span class="tin-font m-2">Jebba Woman</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/34.jpg" alt="Gallery Image" />
-                </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">79,00 TND</span>
-                  <span class="tin-font m-2">Jebba Woman</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-4 div-h-100 p-1 flip-card col-xm">
-              <div class="flip-card-inner">
-                <div class="gal-img flip-card-front p-0">
-                  <img src="/assets/18.jpg" alt="Gallery Image" />
-                </div>
-                <div
-                  class="flip-card-back p-0 bg-3 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <span class="tin-font m-2">79,00 TND</span>
-                  <span class="tin-font m-2">Jebba Woman</span>
-                </div>
-              </div>
-            </div>
-            <div class="row m-0 container-50">
-            <div class="col-lg-12 col-md-12 col-sm-0 p-1 ">
-                <div class="box-2 d-flex flex-column justify-content-center align-items-center ">
-                  <div class="d-flex justify-content-center w-100">
-                    <span class="title-5"> All products in our website</span>
+                <div class="col-lg-2 col-md-6 col-sm-12 gallery-item">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="gal-img">
+                          <img
+                            src="https://tunisie.co/uploads/images/content/jebba-310518-6.jpg"
+                            alt="Gallery Image"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="product-info">
+                          <span class="price">59,00 TND</span>
+                          <span class="product-name"
+                            >Jebba Women Mid-length</span
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -365,54 +416,59 @@
 
         <!-- Contact Us -->
         <div class="swiper-slide">
-            <div class="row m-0 h-100 pos-sec">
-                <div class="col-lg-6 col-md-12 col-sm-12 p-1">
-                    <div class="box d-flex flex-column justify-content-between p-4 bg-8">
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span class="sec-font ms-3">
-                                 24/7 support
-                            </span>
-                        </div>
-                            <h1 class="title">Cantact us <br/> we love to hear from you</h1>
-                            <div class="d-flex">
-                                <div class="icon-button soc me-2">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div class="icon-button soc me-2">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </div>
-                                <div class="icon-button soc me-2">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </div>
-                                <div class="icon-button soc me-2">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </div>
-                                <div class="icon-button soc me-2">
-                                    <i class="fa-brands fa-pinterest"></i>
-                                </div>
-                            </div>
-                    </div>
+          <div class="row m-0 h-100 pos-sec">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-1">
+              <div
+                class="box d-flex flex-column justify-content-between p-4 bg-8"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span class="sec-font ms-3"> 24/7 support </span>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 p-1">
-                    <div class="box bg-7 p-4">
-                        <div class="blury-box d-flex flex-column align-items-start justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <span class="title-5 mb-3">Contact us</span>
-                            </div>
-                            <div class="contact-form">
-                                <span class="sec-font"> Full Name</span>
-                                <input type="text" />
-                                <span class="sec-font"> Email</span>
-                                <input type="email" />
-                                <span class="sec-font"> Message</span>
-                                <textarea rows="6"></textarea>
-                            </div>
-                            <button class="main-button mt-2">Submit</button>
-                        </div>
-                    </div>
+                <h1 class="title">
+                  Cantact us <br />
+                  we love to hear from you
+                </h1>
+                <div class="d-flex">
+                  <div class="icon-button soc me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="icon-button soc me-2">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                  <div class="icon-button soc me-2">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="icon-button soc me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="icon-button soc me-2">
+                    <i class="fa-brands fa-pinterest"></i>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 p-1">
+              <div class="box bg-7 p-4">
+                <div
+                  class="blury-box d-flex flex-column align-items-start justify-content-between"
+                >
+                  <div class="d-flex align-items-center">
+                    <span class="title-5 mb-3">Contact us</span>
+                  </div>
+                  <div class="contact-form">
+                    <span class="sec-font"> Full Name</span>
+                    <input type="text" />
+                    <span class="sec-font"> Email</span>
+                    <input type="email" />
+                    <span class="sec-font"> Message</span>
+                    <textarea rows="6"></textarea>
+                  </div>
+                  <button class="main-button mt-2">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Add content for Contact Us -->
         </div>
       </div>
@@ -425,10 +481,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="script.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
+      /** swipe initialize  */
       var nav = ["Home", "About", "Gallery", "Contact Us"];
       var swiper = new Swiper(".mySwiper", {
         effect: "cube",
@@ -449,6 +506,24 @@
       var box = document.querySelector(".open-box");
       box.addEventListener("click", () => {
         box.classList.toggle("active");
+      });
+
+      /** part load */
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Simulate loading delay (remove in production)
+        setTimeout(() => {
+          const preloader = document.getElementById("preloader");
+          const mainContent = document.getElementById("main-content");
+
+          // Hide the preloader
+          preloader.style.opacity = "0";
+          preloader.style.visibility = "hidden";
+          preloader.style.transition = "opacity 0.5s ease";
+
+          // Show the main content
+          mainContent.style.display = "block";
+        }, 900); // Adjust delay as needed
       });
     </script>
   </body>

@@ -479,15 +479,15 @@ button:hover {
 /*gallery*/
 
 .gallery-section {
-    padding: 60px 15px 20px;
+    padding: 55px 15px 20px;
 }
 
 .gallery-row {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .gallery-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Flip Card Styles */
@@ -495,7 +495,7 @@ button:hover {
     background-color: transparent;
     perspective: 1000px;
     width: 100%;
-    height: 240px;
+    height: 380px;
 }
 
 .flip-card-inner {
